@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/Page1.css">
+    <title>Payoo - Mobile Banking</title>
+</head>
+<body class="bg-blend-color-burn">
+    <main>
+        <section class="Overhead">
+            <div class="Pics">
+                <img src="./assets/bg.png" alt="Bg" class="bg">
+                <img src="./assets/Group.png" alt="An image of the group" class="groupimg">
+            </div>
+        </section>
+        <section class="form">
+            <div class="number">
+                <h1>Mobile Number</h1>
+                <input type="text" placeholder="Enter your Phone number" id="phone">   
+            </div>
+            <div class="Pin">
+                <h1>4 Digit Pin</h1>
+                <input type="text" placeholder="Enter 4 Digit Pin" id="pin">
+            </div>
+            <div>
+                <Button id="loginBtn">
+                    Login
+                </Button>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+                const phoneInput = document.getElementById("phone");
+                const pinInput = document.getElementById("pin");
+                const loginBtn = document.getElementById("loginBtn");
+
+                const setPin = "4326";       
+                const setNumber = "1754325664";
+
+                loginBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                const phone = phoneInput.value.trim();
+                const pin = pinInput.value.trim();
+
+                if (phone === "" && pin === "") {
+                    alert("⚠️ Please put in your credentials");
+                } else if (phone === setNumber && pin === setPin) {
+                    window.location.href = "./other/Page2.html";
+                } else {
+                    alert("⚠️ Please put in Your proper credentials");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

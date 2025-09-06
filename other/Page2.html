@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payooo UI</title>
+  <link rel="stylesheet" href="./../styles/Home.css">
+</head>
+<body>
+  <div class="app">
+
+    <div class="card balance-card">
+      <div>
+        <h2>$45000</h2>
+        <p>Available Balance</p>
+      </div>
+      <button class="logout-btn">Log Out</button>
+    </div>
+
+    <div class="card welcome-card">
+      <h2>🔥 Welcome to Payooo!</h2>
+      <p>Enjoy easy and convenient financial services with us.<br>Cashout charge is low and</p>
+
+      <div class="grid">
+        <button class="action-btn" id="btn-add-money"><div><img src="./../assets/wallet1.png" alt=""></div>Add Money</button>
+        <button class="action-btn" id="btn-cashout"><div><img src="./../assets/send1.png" alt=""></div>Cashout</button>
+        <button class="action-btn" id="btn-transfer-money"><div><img src="./../assets/money1.png" alt=""></div>Transfer Money</button>
+        <button class="action-btn" id="btn-get-bonus"><div><img src="./../assets/bonus1.png" alt=""></div>Get Bonus</button>
+        <button class="action-btn" id="btn-pay-bill"><div><img src="./../assets/purse1.png" alt=""></div>Pay Bill</button>
+        <button class="action-btn" id="btn-transactions"><div><img src="./../assets/transaction1.png" alt=""></div>Transactions</button>
+      </div>
+    </div>
+
+    <div class="latest">
+      <div class="latest-header">
+        <h3>Latest Payment</h3>
+        <a href="#">View All</a>
+      </div>
+
+      <div class="payment-item">
+        <div class="payment-left">
+          <img src="./../assets/wallet1.png" alt="">
+          <div>
+            <p class="title">Electricity Bill</p>
+            <p class="time">Today 01:44 AM</p>
+          </div>
+        </div>
+        <span class="menu">⋮</span>
+      </div>
+
+      <div class="payment-item">
+        <div class="payment-left">
+          <img src="./../assets/wallet1.png" alt="">
+          <div>
+            <p class="title">Bank Deposit</p>
+            <p class="time">Today 01:44 AM</p>
+          </div>
+        </div>
+        <span class="menu">⋮</span>
+      </div>
+
+      <div class="payment-item">
+        <div class="payment-left">
+          <img src="./../assets/wallet1.png" alt="">
+          <div>
+            <p class="title">Mobile Recharge</p>
+            <p class="time">Today 01:44 AM</p>
+          </div>
+        </div>
+        <span class="menu">⋮</span>
+      </div>
+
+      <div class="payment-item">
+        <div class="payment-left">
+          <img src="./../assets/wallet1.png" alt="">
+          <div>
+            <p class="title">Gas Bill</p>
+            <p class="time">Today 01:44 AM</p>
+          </div>
+        </div>
+        <span class="menu">⋮</span>
+      </div>
+    </div>
+
+    <div class="bottom-container">
+      <div class="form-card" id="form-add-money">
+        <h3>Add Money</h3>
+        <div class="form-group"><select><option>Select a Bank</option><option>Bank A</option></select></div>
+        <div class="form-group"><input type="text" placeholder="Enter 16-digit account number"></div>
+        <div class="form-group"><input type="number" placeholder="Amount to Add"></div>
+        <div class="form-group"><input type="password" placeholder="Enter 4-digit pin number"></div>
+        <button class="btn">Add Money</button>
+      </div>
+
+      <div class="form-card" id="form-cashout">
+        <h3>Cash Out</h3>
+        <div class="form-group"><input type="text" placeholder="Agent Number"></div>
+        <div class="form-group"><input type="number" placeholder="Enter amount to withdraw"></div>
+        <div class="form-group"><input type="password" placeholder="Enter 4-digit pin number"></div>
+        <button class="btn">Withdraw Money</button>
+      </div>
+
+      <div class="form-card" id="form-transfer-money">
+        <h3>Transfer Money</h3>
+        <div class="form-group"><input type="text" placeholder="User Account Number"></div>
+        <div class="form-group"><input type="number" placeholder="Enter amount to transfer"></div>
+        <div class="form-group"><input type="password" placeholder="Enter 4-digit pin number"></div>
+        <button class="btn">Send Now</button>
+      </div>
+
+      <div class="form-card" id="form-get-bonus">
+        <h3>Get Bonus</h3>
+        <div class="form-group"><input type="text" placeholder="Enter your coupon"></div>
+        <button class="btn">Get Bonus</button>
+      </div>
+
+      <div class="form-card" id="form-pay-bill">
+        <h3>Pay Bill</h3>
+        <div class="form-group"><select><option>Select To Pay</option></select></div>
+        <div class="form-group"><input type="text" placeholder="Enter account number"></div>
+        <div class="form-group"><input type="number" placeholder="Amount to Pay"></div>
+        <div class="form-group"><input type="password" placeholder="Enter 4-digit pin number"></div>
+        <button class="btn">Pay Now</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="./../scripts/Home.js"></script>
+</body>
+</html>
